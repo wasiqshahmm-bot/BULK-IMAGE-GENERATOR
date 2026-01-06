@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muddasir Nazar Fabric - Unstitched Cloth for Men and Women</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #333; }
+        header { background-color: #2c3e50; color: white; padding: 20px; text-align: center; }
+        nav { background-color: #34495e; padding: 10px; }
+        nav ul { list-style: none; padding: 0; text-align: center; }
+        nav ul li { display: inline; margin: 0 15px; }
+        nav a { color: white; text-decoration: none; }
+        section { padding: 40px; max-width: 1200px; margin: auto; }
+        .hero { background-image: url('images/fabric-banner.jpg'); background-size: cover; height: 400px; display: flex; align-items: center; justify-content: center; color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+        .products { display: flex; flex-wrap: wrap; justify-content: space-around; }
+        .product { width: 30%; margin: 10px; text-align: center; border: 1px solid #ddd; padding: 20px; }
+        .product img { width: 100%; height: 200px; object-fit: cover; }
+        footer { background-color: #2c3e50; color: white; text-align: center; padding: 20px; }
+        form { max-width: 600px; margin: auto; }
+        input, textarea { width: 100%; padding: 10px; margin: 10px 0; }
+        button { background-color: #e74c3c; color: white; padding: 10px; border: none; cursor: pointer; }
+        @media (max-width: 768px) { .products { flex-direction: column; } .product { width: 100%; } }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Muddasir Nazar Fabric</h1>
+        <p>Unstitched Cloth for Men and Women - Original Fabrics Available</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <section id="home" class="hero">
+        <div>
+            <h2>Welcome to Muddasir Nazar Fabric</h2>
+            <p>Discover premium unstitched fabrics for men and women. We stock original Grace, Gul Ahmed, Chairman Latha, and every fabric you need.</p>
+            <a href="#products"><button>Shop Now</button></a>
+        </div>
+    </section>
+    
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Muddasir Nazar Fabric is your go-to shop for high-quality unstitched cloth. We specialize in men's and women's fabrics, including authentic brands like Grace, Gul Ahmed, and Chairman Latha. With a wide range of options, we ensure you find the perfect material for your needs. Visit us today!</p>
+    </section>
+    
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="products">
+            <div class="product">
+                <img src="images/grace-fabric.jpg" alt="Grace Fabric">
+                <h3>Grace Fabric</h3>
+                <p>Original unstitched cloth for elegant designs. Perfect for men and women.</p>
+                <p>Price: Starting at $20/meter</p>
+            </div>
+            <div class="product">
+                <img src="images/gul-ahmed-fabric.jpg" alt="Gul Ahmed Fabric">
+                <h3>Gul Ahmed Fabric</h3>
+                <p>Premium quality fabrics with timeless patterns.</p>
+                <p>Price: Starting at $25/meter</p>
+            </div>
+            <div class="product">
+                <img src="images/chairman-latha-fabric.jpg" alt="Chairman Latha Fabric">
+                <h3>Chairman Latha Fabric</h3>
+                <p>Luxurious unstitched cloth for sophisticated looks.</p>
+                <p>Price: Starting at $30/meter</p>
+            </div>
+            <div class="product">
+                <img src="images/other-fabrics.jpg" alt="Other Fabrics">
+                <h3>All Fabrics Available</h3>
+                <p>Explore our full collection of unstitched cloths for every style.</p>
+                <p>Price: Varies</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <p>Address: [Your Shop Address, e.g., Lahore, Pakistan]<br>Phone: [Your Phone Number]<br>Email: [Your Email]</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 Muddasir Nazar Fabric. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            // In a real site, integrate with a backend like EmailJS for sending emails.
+        });
+    </script>
+</body>
+</html>
